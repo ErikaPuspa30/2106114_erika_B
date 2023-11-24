@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran Peserta Seni</title>
+</head>
+<body>
+
+<h2>Form Pendaftaran Peserta Seni</h2>
+
+<form action="proses_pendaftaran.php" method="post">
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="alamat">Alamat:</label><br>
+    <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+
+    <label for="jenis_seni">Jenis Seni yang Diikuti:</label><br>
+    <select id="jenis_seni" name="jenis_seni">
+        <option value="seni_rupa">Seni Rupa</option>
+        <option value="seni_musik">Seni Musik</option>
+        <option value="seni_tari">Seni Tari</option>
+        <!-- Tambahkan opsi lainnya sesuai dengan jenis seni yang ada -->
+    </select><br><br>
+
+    <label for="pengalaman">Pengalaman dalam Seni (jika ada):</label><br>
+    <textarea id="pengalaman" name="pengalaman" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Daftar">
+</form>
+
+</body>
+</html>
